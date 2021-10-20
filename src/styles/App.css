@@ -13,12 +13,3 @@ h2 {
   font-weight: 900;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-}
-
-a:hover {
-  font-weight: 700;
-}
