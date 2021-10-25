@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddProperty renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="add-property"
+  >
+    <h2>
+      Add Property Page
+    </h2>
+  </div>
+</DocumentFragment>
+`;

@@ -9,7 +9,7 @@ function NavBar() {
       <img src={logo} alt="Surreal Estate" className="logo" />
       <ul className="navbar-links">
         <li className="navbar-links-item">
-          <NavLink to="/" exact={true} activeClassName="active">
+          <NavLink to="/" exact activeClassName="active">
             View Properties
           </NavLink>
         </li>

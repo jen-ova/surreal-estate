@@ -5,8 +5,8 @@
         "jest": true
     },
     "extends": [
-        "plugin:prettier/recommended",
-        "airbnb"
+        "airbnb",
+        "plugin:prettier/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
