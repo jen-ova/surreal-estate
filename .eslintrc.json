@@ -30,6 +30,10 @@
             {
                 "extensions": [".js", ".jsx"]
             }
+        ],
+        "prettier/prettier": [   "warn",   {
+            "endOfLine": "auto"
+          }
         ]
     }
 }
