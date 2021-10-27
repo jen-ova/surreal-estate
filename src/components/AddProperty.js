@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Alert from "./Alert";
+import postProperty from "../requests/postProperty";
 import "../styles/AddProperty.css";
 
 function AddProperty() {
@@ -12,13 +14,19 @@ function AddProperty() {
       city: "Manchester",
       email: "",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+    setAlert({ message: "", isSuccess: false });
+    postProperty(fields, setAlert);
   };
 
   const handleFieldChange = (event) => {
@@ -120,7 +128,7 @@ function AddProperty() {
               <option value="Manchester">Manchester</option>
               <option value="Leeds">Leeds</option>
               <option value="Sheffield">Sheffield</option>
-              <option value="Liverpoool">Liverpool</option>
+              <option value="Liverpool">Liverpool</option>
             </select>
           </label>
         </div>
@@ -141,6 +149,7 @@ function AddProperty() {
             />
           </label>
         </div>
+        <Alert message={alert.message} success={alert.isSuccess} />
         <button type="submit" className="add-property__button">
           Add
         </button>
