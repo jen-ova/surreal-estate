@@ -17,7 +17,9 @@ exports[`NavBar renders correctly 1`] = `
         class="navbar-links-item"
       >
         <a
-          href="/viewproperties"
+          aria-current="page"
+          class="active"
+          href="/"
         >
           View Properties
         </a>
@@ -26,7 +28,7 @@ exports[`NavBar renders correctly 1`] = `
         class="navbar-links-item"
       >
         <a
-          href="addproperty"
+          href="/add-property"
         >
           Add a Property
         </a>

@@ -1,3 +1,8 @@
 .properties {
     padding: 1rem;
 }
+
+.properties__card {
+    display: flex;
+    flex-wrap: wrap;
+}

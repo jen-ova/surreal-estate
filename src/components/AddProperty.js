@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import Alert from "./Alert";
 import postProperty from "../requests/postProperty";
-import "../styles/AddProperty.css";
+import "../styles/addProperty.css";
 
 function AddProperty() {
   const initialState = {
     fields: {
       title: "",
       type: "",
-      bedrooms: "",
-      bathrooms: "",
-      price: "",
+      bedrooms: 0,
+      bathrooms: 0,
+      price: 0,
       city: "Manchester",
       email: "",
     },
@@ -35,7 +35,7 @@ function AddProperty() {
 
   return (
     <div className="add-property">
-      <h2>Add Property Page</h2>
+      <h2>Add Property</h2>
       <form onSubmit={handleAddProperty}>
         <div className="section">
           <span>1</span>Property Details
@@ -149,7 +149,9 @@ function AddProperty() {
             />
           </label>
         </div>
-        <Alert message={alert.message} success={alert.isSuccess} />
+        {alert.message && (
+          <Alert message={alert.message} success={alert.isSuccess} />
+        )}
         <button type="submit" className="add-property__button">
           Add
         </button>

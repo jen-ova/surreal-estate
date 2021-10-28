@@ -8,6 +8,9 @@ exports[`Properties renders correctly 1`] = `
     <h2>
       Properties Page
     </h2>
+    <div
+      class="properties__card"
+    />
   </div>
 </DocumentFragment>
 `;
