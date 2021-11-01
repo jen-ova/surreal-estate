@@ -1,0 +1,19 @@
+.sideBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+}
+
+.sideBar li a {
+    display: block;
+    /* width: 5rem; */
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.sideBar li a:hover {
+    background-color: #774872;
+    color: white;
+}

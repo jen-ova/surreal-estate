@@ -127,8 +127,8 @@ function AddProperty() {
               onChange={handleFieldChange}>
               <option value="Manchester">Manchester</option>
               <option value="Leeds">Leeds</option>
-              <option value="Sheffield">Sheffield</option>
               <option value="Liverpool">Liverpool</option>
+              <option value="Sheffield">Sheffield</option>
             </select>
           </label>
         </div>
