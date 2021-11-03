@@ -26,14 +26,15 @@ function Properties() {
   return (
     <div className="properties">
       <SideBar className="sideBar" />
-      <h2>Properties Page</h2>
-      <div className="properties__card">
-        {properties.map((property) => (
-          <PropertyCard key={property._id} {...property} />
-        ))}
-        {alert.message && (
-          <Alert message={alert.message} success={alert.isSuccess} />
-        )}
+      <div className="properties__grid">
+        <div className="properties__card">
+          {properties.map((property) => (
+            <PropertyCard key={property._id} {...property} />
+          ))}
+          {alert.message && (
+            <Alert message={alert.message} success={alert.isSuccess} />
+          )}
+        </div>
       </div>
     </div>
   );

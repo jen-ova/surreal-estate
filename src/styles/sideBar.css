@@ -1,19 +1,35 @@
 .sideBar ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
-    background-color: #F8F8F8;
+    background-color: white;
+    font: inherit;
+    font-weight: inherit;
 }
 
 .sideBar li a {
     display: block;
-    /* width: 5rem; */
+    width: 12vw;
     color: black;
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
 
 .sideBar li a:hover {
-    background-color: #774872;
-    color: white;
+    background-color: #F8F8F8;
+    color: black;
+}
+
+@media (min-width: 500px) {
+    .sideBar ul {
+        height: 100vh;
+        position: sticky;
+        overflow: auto;
+    }
+  }
+
+@media (max-width: 500px) {
+    .sideBar ul li a {
+        width: 100vw;
+    }
 }

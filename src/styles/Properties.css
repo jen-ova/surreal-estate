@@ -1,8 +1,19 @@
 .properties {
-    padding: 1rem;
+    display: flex;
+}
+
+.properties__grid {
+    flex: 80%;
 }
 
 .properties__card {
     display: flex;
     flex-wrap: wrap;
+    padding: 2rem;
 }
+
+@media (max-width: 500px) {
+    .properties {
+      flex-direction: column;
+    }
+  }
