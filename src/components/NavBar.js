@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+import FacebookLogin from "react-facebook-login";
 import "../styles/navBar.css";
 import logo from "../assets/logo.png";
 
-const NavBar = (onLogin, onLogout, userID) => {
+// add handleLogout & userID back in
+const NavBar = (onLogin) => {
   return (
     <div className="navbar">
       <img src={logo} alt="Surreal Estate" className="logo" />
@@ -26,7 +27,7 @@ const NavBar = (onLogin, onLogout, userID) => {
             </button>
           ) : ( */}
           <FacebookLogin
-            appId="554621965721649"
+            appId="4503539236407731"
             fields="name,email,picture"
             callback={onLogin}
             cssClass="facebook-login"

@@ -6,23 +6,23 @@ import AddProperty from "./AddProperty";
 import "../styles/app.css";
 
 const App = () => {
-  // const initialState = {
-  //   userID: {
-  //     id: "",
-  //     imgURL: "",
-  //     userName: "",
-  //   },
-  // };
+  const initialState = {
+    userID: {
+      id: "",
+      imgURL: "",
+      userName: "",
+    },
+  };
 
-  // const [userID, setUserID] = useState(initialState.userID);
+  const [userID, setUserID] = useState(initialState.userID);
 
-  // const handleLogin = (response) => {
-  //   setUserID({
-  //     id: response.id,
-  //     imgURL: response.picture.data.url,
-  //     userName: response.name,
-  //   });
-  // };
+  const handleLogin = (response) => {
+    setUserID({
+      id: response.id,
+      imgURL: response.picture.data.url,
+      userName: response.name,
+    });
+  };
 
   // const handleLogout = () => {
   //   window.FB.logout(() => {
@@ -33,7 +33,8 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <NavBar onLogin={handleLogin} onLogout={handleLogout} userID={userID} />
+        {/* add handleLogout back in */}
+        <NavBar onLogin={handleLogin} userID={userID} />
         <Switch>
           <Route exact path="/">
             <Properties />
