@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import buildQueryString from "../helpers/buildQueryString";
 import "../styles/sideBar.css";
 
-function SideBar() {
+const SideBar = () => {
   const { search } = useLocation();
   const { push } = useHistory();
   const [query, setQuery] = useState("");
@@ -32,7 +32,7 @@ function SideBar() {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />
-        <button type="submit">
+        <button type="submit" className="sideBar__button">
           <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
@@ -70,6 +70,6 @@ function SideBar() {
       </ul>
     </div>
   );
-}
+};
 
 export default SideBar;

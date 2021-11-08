@@ -7,7 +7,7 @@ import getProperty from "../requests/getProperty";
 import "../styles/properties.css";
 import SideBar from "./SideBar";
 
-function Properties() {
+const Properties = () => {
   const [properties, setProperties] = useState([]);
   const [alert, setAlert] = useState({ message: "" });
 
@@ -38,6 +38,6 @@ function Properties() {
       </div>
     </div>
   );
-}
+};
 
 export default Properties;

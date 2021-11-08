@@ -44,6 +44,9 @@
     border-radius: 1.5rem;
 }
 
+.navbar-links-item__FB {
+}
+
 @media only screen and (max-width: 900px) {
     .navbar-links {
         margin: 0.5rem;

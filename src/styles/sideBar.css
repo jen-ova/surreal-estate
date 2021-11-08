@@ -21,7 +21,7 @@ input, button {
 	border-radius: 0.5rem; 
 }
 
-button {
+.sideBar__button {
     background: #774872;
 	color: #fff;
     font-weight: bolder;

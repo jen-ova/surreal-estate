@@ -3,7 +3,7 @@ import Alert from "./Alert";
 import postProperty from "../requests/postProperty";
 import "../styles/addProperty.css";
 
-function AddProperty() {
+const AddProperty = () => {
   const initialState = {
     fields: {
       title: "",
@@ -158,6 +158,6 @@ function AddProperty() {
       </form>
     </div>
   );
-}
+};
 
 export default AddProperty;
